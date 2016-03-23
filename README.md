@@ -1,7 +1,7 @@
 <h1>AngularJS application with modular approach</h1>
 
 <h3>Introduction</h3>
-<p>This application is about about how to use a modular approach in Angularjs application. It is a very small application which has a Flight Search module which can be used to search flights. The idea behind this effort is to make realize a developer about the importance of modularity.</p>
+<p>This application is about how to use a modular approach in Angularjs application. It is a very small application which has a Flight Search module which can be used to search flights. The idea behind this effort is to make realize a developer about the importance of modularity.</p>
 
 <h3>How to install</h3>
 <h5>Execute the following commands in sequence</h5>
