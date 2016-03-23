@@ -1,37 +1,25 @@
-THIS GIVES INTRODUCTION TO FUNCTIONAL AND TECHNICAL CAPABILITIES OF THIS APPLICATION.
+<h1>AngularJS application with modular approach</h1>
 
-Application has the following functionality:
-    1) Two tabs, each for One way journey and Return journey search
-    2) There is a data.json file for the data.
-    3) Choose the following for searching(for other values please check data.json):
-        Journey from :  Delhi
-        To:             Goa
-        Start date   :  03/20/2016
-    4) Search button is disabled when no data is entered(Form validation)
-    5) Reset button resets all the search criteria and hides the slider and grid.
-    6) Clicking on Search Button will show the slider and any data which is present.
-    7) Grid can be sorter by clicking on the column names.
-    8) Similar functionality for Return type journey.
+<h3>Introduction</h3>
+<p>This application is about about how to use a modular approach in Angularjs application. It is a very small application which has a Flight Search module which can be used to search flights. The idea behind this effort is to make realize a developer about the importance of modularity.</p>
 
+<h3>How to install</h3>
+<h5>Execute the following commands in sequence</h5>
+<ol>
+    <li><code>npm install</code></li>
+    <li><code>bower install</code></li>
+    <li><code>grunt karma</code>    To run unit test</li>
+    <li><code>grunt</code>          To start the local server http://localhost:8080/app/index.html</li>
+</ol>
 
-
-
-
-Technical features:
-    1) Index.html is the start point.
-    2) Its a single page application.
-    3) Entire application is build by creating individual web component.
-    4) There is no dependancy between them except passing the data to the component.
-    5) Used JqueryUI datepicker and slider tool only, the rest of the application is built from scratch. Have created custom control out of that for better maintainability.
-    6) Uses AngularJS framework for the developent.
-    7) No CSS framework is used except for Datepicker and Slider component.
-    8) Contains unit tests for each component & module present.
-
-
-
-
-How to Install the Application:
-    grunt install   //To install node and bower components
-    grunt karma     //To run the unit test
-    grunt           //To start the local server   http://localhost:8080/app/index.html
-    
+<h3>Technical features</h3>
+<ul>
+    <li>Index.html is the start point.</li>
+    <li>Its a single page application.</li>
+    <li>Entire application is build by creating individual web component.</li>
+    <li>There is no dependancy between them except passing the data to the component.</li>
+    <li>Used JqueryUI datepicker and slider tool only, the rest of the application is built from scratch. Have created custom control out of that for better maintainability.</li>
+    <li>Uses AngularJS framework for the developent.</li>
+    <li>No CSS framework is used except for Datepicker and Slider component.</li>
+    <li>Contains unit tests for each component & module present.</li>
+</ul>
