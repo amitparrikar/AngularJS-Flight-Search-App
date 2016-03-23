@@ -1,0 +1,14 @@
+<div ng-controller="flightSearchController">
+    <tabs>
+        <tab-item title="One way journey">
+            <search-form one-way="true" id="oneWay">
+                <grid grid-config="gridConfig"></grid>
+            </search-form>
+        </tab-item>
+        <tab-item title="Return journey">
+            <search-form one-way="false" id="return">
+                <grid grid-config="gridConfig"></grid>
+            </search-form>
+        </tab-item>
+    </tabs>
+</div>

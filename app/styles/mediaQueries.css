@@ -1,0 +1,24 @@
+@media only screen and (max-width: 900px) {
+    .tabbable{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .tabbable{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .tabbable{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .form-control input{
+        width: 150px;
+        font-size: 20px;
+    }
+    .form-control label{
+        font-size: 15px;
+    }
+}

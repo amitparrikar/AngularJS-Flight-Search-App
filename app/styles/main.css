@@ -1,0 +1,295 @@
+/*================= COMMON CSS START =================*/
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: Roboto-Light;
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+body{
+    background: url(images/subtle_white_feathers.png);
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+[disabled = "disabled"]{
+    opacity: 0.5;
+}
+.visibility-hidden{
+    visibility: hidden;
+}
+.text-align-center{
+    text-align: center;
+}
+.btn{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    /*font-family: Roboto-Light;*/
+    cursor: pointer;
+    font-weight: 100;
+    outline: none;
+}
+.btn-large{
+    width: 120px;
+    height: 40px;
+    font-size: 25px;
+}
+.btn-medium{
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+}
+.btn-simple{
+    border: 1px solid #006AB9;
+    background: white;
+    color: #006AB9;
+}
+.btn-normal{
+    border: 1px solid #006AB9;
+    background: #0092FF;
+    color: white;
+}
+.btn-normal:hover{
+    background: #0073CA;
+}
+.color-normal{
+    color: rgb(66, 133, 244);
+}
+header{
+    background-color: rgb(66, 133, 244);
+    height: 60px;
+    padding: 15px 0px 10px 40px;
+    box-shadow: 0px 7px 17px #5A5A5A;
+}
+footer{
+    background: rgb(66, 133, 244);
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    border-top: 1px solid rgb(0, 84, 224);
+}
+footer .footer-head{
+    padding: 7px 0px 5px 20px;
+    font-size: 25px;
+}
+footer .footer-base{
+    background: rgb(18, 107, 255);
+    height: 20px;
+    padding: 5px 0px 7px 20px;
+}
+footer .footer-base span{
+    float: right;
+    margin-right: 50px;
+}
+header .title{
+    font-size: 50px;
+    color: white;
+    /*font-family: Roboto-Light;*/
+    font-weight: 100;
+}
+header .flight-logo{
+    display: inline-block;
+    width: 100px;
+    height: 82px;
+    background: url(images/Airplane-big-icon.png) no-repeat;
+    background-size: 100px 82px;
+}
+/*================= COMMON CSS END =================*/
+
+
+
+/*================= GRID CSS START =================*/
+
+.grid {
+    background: white;
+    margin: 0 0 20px 0;
+}
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*='col-'] {
+    float: left;
+}
+.grid [class*='col-']:last-of-type {
+    padding-right: 0;
+}
+.col-2-3 {
+    width: 66.66%;
+}
+.col-1-3 {
+    width: 33.33%;
+}
+.col-1-1{
+    width: 100%;
+}
+.col-1-2 {
+    width: 50%;
+}
+.col-1-4 {
+    width: 25%;
+}
+.col-1-5 {
+    width: 20%;
+}
+.col-1-8 {
+    width: 12.5%;
+}
+.grid-pad {
+    padding: 20px 0 20px 20px;
+}
+.grid-pad [class*='col-']:last-of-type {
+    /*padding-right: 20px;*/
+}
+.grid-header{
+    cursor: pointer;
+}
+.grid-header .grid-col{
+    background: rgb(216, 231, 255);
+}
+.grid-body{
+
+}
+.grid-footer{
+
+}
+.grid-footer .footer-controls{
+    float: right;
+    padding: 10px;
+}
+.grid-body .grid-message{
+    font-size: 35px;
+    font-weight: 100;
+    /*font-family: Roboto-Light;*/
+    color: #ABABAB;
+    line-height: 75px;
+}
+.grid-col{
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0px;
+    margin-top: 4px;
+    background: white;
+    box-shadow: 1px 1px 4px #8C8C8C;
+}
+.grid-col-odd{
+    background: red;
+}
+.sort-up{
+    background: url(images/Arrows-Up-icon.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-table;
+    margin-left: 5px;
+}
+.sort-down{
+    background: url(images/Arrows-Down-icon.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-table;
+    margin-left: 5px;
+}
+/*================= GRID CSS END =================*/
+
+
+
+
+/*================= SEARCH FORM CSS START =================*/
+
+.form-control {
+    padding: 10px;
+}
+.form-control input{
+    width: 200px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid #B3B3B3;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 25px;
+    margin: 0px 10px;
+}
+.form-control label{
+    font-size: 20px;
+    color: #8E8E8E;
+}
+
+
+/*================= SEARCH FORM CSS END =================*/
+
+
+
+
+/*================= SLIDER CSS START =================*/
+
+.slider-control{
+    margin: 0px auto;
+    width: 50%;
+    cursor: pointer;
+}
+.slider-control #slider{
+    margin-top: 15px;
+}
+.ui-slider{
+    background: rgb(216, 231, 255);
+}
+#slider .ui-slider-handle{
+    cursor: pointer;
+}
+#slider .ui-slider-handle:hover{
+    background: #126bff;
+}
+/*================= SLIDER CSS END =================*/
+
+
+
+/*================= TABS CSS START =================*/
+.nav {
+    height: 50px;
+    background: white;
+}
+.nav-tabs li {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 10px #9C9C9C;
+}
+.nav-tabs li:hover{
+    opacity: 0.5;
+}
+.nav-tabs li span {
+    padding: 0 10px;
+    line-height: 50px;
+    font-size: 23px;
+}
+.tabbable{
+    margin: auto;
+    width: 70%;
+    box-shadow: 0px 0px 30px dimgrey;
+    background: white;
+}
+.active{
+    border-bottom: 4px solid rgb(66, 133, 244) !important;
+}
+.nav-tabs{
+    cursor: pointer;
+}
+.tab-pane{
+    height: 75vh;
+    padding: 10px;
+    overflow: auto;
+    /*background-color: white;*/
+    overflow: auto;
+}
+/*================= TABS CSS END =================*/

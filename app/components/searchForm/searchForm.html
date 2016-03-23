@@ -1,0 +1,46 @@
+<div>
+    <form class="grid grid-pad" name="searchForm" id="{{formId}}" novalidate>
+        <div class="col-1-2">
+            <div class="form-control float-right">
+                <label for="startPlace">From : </label>
+                <input title="Journey start location" required ng-model="formData.startPlace" placeholder="Origin" id="startPlace" name="startPlace" type="text"/>
+            </div>
+        </div>
+        <div class="col-1-2">
+            <div class="form-control float-left">
+                <label for="endPlace">To : </label>
+                <input title="Destination location" required ng-model="formData.endPlace" placeholder="Destination" id="endPlace" name="endPlace" type="text"/>
+            </div>
+        </div>
+        <div class="col-1-2">
+            <div class="form-control float-right">
+                <label for="startDate">Start date :</label>
+                <date-picker place-holder="dd/mm/yy" date="formData.startDate" is-required="true" name="startDate"></date-picker>
+            </div>
+        </div>
+        <div class="col-1-2">
+            <div class="form-control float-left" ng-class="{'visibility-hidden': oneWay}">
+                <label for="returnDate">Return date :</label>
+                <date-picker place-holder="dd/mm/yy" date="formData.returnDate" is-required="!oneWay" name="returnDate"></date-picker>
+            </div>
+        </div>
+        <div class="col-1-2">
+            <div class="form-control float-right">
+                <button class="btn btn-large btn-normal" title="Provide search details" ng-click="search();" ng-disabled="searchForm.$invalid">Search</button>
+            </div>
+        </div>
+        <div class="col-1-2">
+            <div class="form-control float-left">
+                <button id="searchBtn" title="Reset the details" class="btn btn-large btn-simple" ng-click="reset();">Reset</button>
+            </div>
+        </div>
+        <div class="col-1-1 text-align-center" ng-class="{'visibility-hidden': !showSlider}">
+            <div class="form-control slider-control">
+                <span>Flight fare upto INR <label>{{formData.sliderValue || 15000}}</label></span>
+                <slider slider-callback="sliderCallback(sliderValue)" slider-value="formData.sliderValue" slider-max-value="15000" value="15000" slider-min-value="0"></slider>
+            </div>
+        </div>
+    </form>
+    <div ng-transclude></div>
+
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Flight Search</title>
+        <link rel="stylesheet" href="styles/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="styles/main.css"/>
+        <link rel="stylesheet" href="styles/mediaQueries.css"/>
+
+    </head>
+    <body>
+        <header>
+            <span class="title">
+                Flight Search Engine
+            </span>
+            <!--<span class="flight-logo"></span>-->
+        </header>
+        <article>
+            <div ng-app="mainApp">
+                <ng-include src="'modules/flightSearchModule/flightSearch.html'"></ng-include>
+            </div>
+        </article>
+        <footer>
+            <ul>
+                <li class="footer-head">
+                    <span>Flight Search Assignment</span>
+                </li>
+                <li class="footer-base">
+                    <span>Developer:  Amit Parrikar, 9049051067</span>
+                </li>
+            </ul>
+        </footer>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="components/filters/filters.js"></script>
+        <script type="text/javascript" src="components/services/flightSearchService.js"></script>
+        <script type="text/javascript" src="modules/flightSearchModule/flightSearchController.js"></script>
+        <script type="text/javascript" src="components/grid/gridDirective.js"></script>
+        <script type="text/javascript" src="components/searchForm/searchFormDirective.js"></script>
+        <script type="text/javascript" src="components/tabs/tabsDirective.js"></script>
+        <script type="text/javascript" src="components/customControls/customControls.js"></script>
+        <script type="text/javascript" src="components/customControls/datePicker.js"></script>
+        <script type="text/javascript" src="components/customControls/slider.js"></script>
+    </body>
+</html>

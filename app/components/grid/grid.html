@@ -1,0 +1,20 @@
+<div class="grid" data-ng-show="gridConfig.gridData">
+    <div class="grid-header">
+        <div ng-click="sort($index)" class="grid-col col-1-4" ng-repeat="name in gridConfig.columnNames">{{name}}
+            <span ng-class="{'sort-up': sortOn[sortOn.colName] && ($index === sortOn.curIndx), 'sort-down': !sortOn[sortOn.colName] && ($index === sortOn.curIndx)}"></span>
+        </div>
+    </div>
+    <div class="grid-body">
+        <div id="gridRow{{$index}}" ng-repeat="rowItem in gridConfig.gridData | orderBy: sortOn.colName : sortOn[sortOn.colName]">
+            <div class="grid-col col-1-4" ng-repeat="field in gridConfig.fieldNames">{{rowItem[field]}}</div>
+        </div>
+        <div class="text-align-center">
+            <span class="grid-message" ng-show="gridConfig.gridData.length === 0">No Data Available</span>
+        </div>
+    </div>
+    <div class="grid-footer">
+        <div class="footer-controls">
+            <button ng-show="!(gridConfig.gridData.length === 0)" class="btn btn-medium btn-normal" ng-click="">Load more</button>
+        </div>
+    </div>
+</div>

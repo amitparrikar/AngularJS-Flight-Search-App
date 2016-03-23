@@ -1,0 +1,26 @@
+{
+  "name": "fligh_search_tw",
+  "version": "1.0.0",
+  "description": "Flight search module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amit Parrikar",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-karma": "^0.12.1",
+    "grunt-npm-install": "^0.3.0",
+    "grunt-serve": "^0.1.6",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-ng-html2js-preprocessor": "^0.2.1"
+  }
+}
